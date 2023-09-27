@@ -131,3 +131,7 @@ video::-webkit-media-controls-mute-button {
   background: #ffcc707f !important;
   border-radius: 0.2vw;
 }
+
+.nice-rack {
+  height: 65vh;
+}
