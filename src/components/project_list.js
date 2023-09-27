@@ -5,6 +5,7 @@ import gcn_launcher1 from "../images/projects/gcn-launcher/launcher-form.png";
 import gcn_launcher2 from "../images/projects/gcn-launcher/diffs.png";
 import gcn_launcher3 from "../images/projects/gcn-launcher/preview.png";
 import music_now from "../images/projects/music-now/cover-photo.png";
+import music_now_video from "../images/projects/music-now/demo.mp4";
 import mogi from "../images/projects/mogi/cover-photo.png";
 import keywords_clustering_tool from "../images/projects/keywords-clustering-tool/cover-photo.png";
 import nice_rack from "../images/projects/nice-rack/cover-photo.png";
@@ -46,6 +47,7 @@ const PROJECTS = [
     category: "personal",
     path: "/projects/music-now",
     cover: { src: music_now, orientation: "horizontal" },
+    video: music_now_video,
   },
   {
     _id: 4,

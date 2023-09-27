@@ -47,7 +47,9 @@ const GCNLauncher = () => {
             </span>
             , which facilitates the process of creating a GCN app. The more
             noticeable features include previewing the entire code directory of
-            an app, and displaying differences in code between 2 GCN apps.
+            an app, and displaying differences in code between 2 GCN apps. This
+            utilized mosly React.JS, Recoil, Redux, and the entirely Java-based
+            GCN backend.
           </div>
         </div>
         <img
