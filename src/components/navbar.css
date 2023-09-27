@@ -1,0 +1,41 @@
+.navbar-container {
+  padding: 3vh 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 26px;
+  margin-bottom: 3vh;
+  height: 10.75vh;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: grid;
+  gap: 3vw;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.navbar-right > *:hover {
+  color: #9bacff;
+  transform: scale(1.1);
+}
+
+.resume-button {
+  width: 130px;
+  border-radius: 2vw;
+  color: black !important;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 100%) !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+  border: none !important;
+}
+
+.resume-button:hover {
+  -webkit-text-fill-color: white;
+  -webkit-background-clip: none;
+}
