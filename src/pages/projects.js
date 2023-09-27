@@ -8,6 +8,7 @@ import gcn_launcher from "../images/projects/gcn-launcher/cover-photo.png";
 import music_now from "../images/projects/music-now/cover-photo.png";
 import mogi from "../images/projects/mogi/cover-photo.png";
 import keywords_clustering_tool from "../images/projects/keywords-clustering-tool/cover-photo.png";
+import nice_rack from "../images/projects/nice-rack/cover-photo.png";
 import roachradiomotto from "../images/projects/RoachRadioMotto.png";
 import roachradiomotto2 from "../images/projects/RoachRadioMotto2.png";
 import letscelebrateballs from "../images/projects/letscelebrateballs.png";
@@ -50,7 +51,7 @@ const PROJECTS = [
     title: "Nice Rack",
     category: "personal",
     path: "/projects/nice-rack",
-    cover: music_now,
+    cover: nice_rack,
   },
   {
     category: "design",
