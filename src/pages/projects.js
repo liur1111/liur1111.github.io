@@ -12,6 +12,9 @@ import nice_rack from "../images/projects/nice-rack/cover-photo.png";
 import roachradiomotto from "../images/projects/RoachRadioMotto.png";
 import roachradiomotto2 from "../images/projects/RoachRadioMotto2.png";
 import letscelebrateballs from "../images/projects/letscelebrateballs.png";
+import shoomverns from "../images/projects/Shoomverns.jpeg";
+import sesfverns from "../images/projects/SESFverns.png";
+import begoosedocrime from "../images/projects/BeGooseDoCrime.png";
 
 import "./projects.css";
 import "../components/project_layout.css";
@@ -24,54 +27,79 @@ const PROJECTS = [
     category: "work",
     path: "/projects/gcn-launcher",
     cover: gcn_launcher,
+    orientation: "vertical",
   },
   {
     title: "Roach Radio",
     category: "personal",
     path: "/projects/roach-radio",
     cover: roach_radio,
+    orientation: "horizontal",
   },
   {
     title: "Personal Portfolio",
     category: "personal",
     path: "/projects/personal-portfolio",
     cover: personal_portfolio,
+    orientation: "horizontal",
   },
   {
     category: "design",
     cover: letscelebrateballs,
+    orientation: "vertical",
+  },
+  {
+    category: "design",
+    cover: begoosedocrime,
+    orientation: "vertical",
+  },
+  {
+    category: "design",
+    cover: sesfverns,
+    orientation: "vertical",
   },
   {
     title: "Music Now",
     category: "personal",
     path: "/projects/music-now",
     cover: music_now,
+    orientation: "horizontal",
+  },
+  {
+    category: "design",
+    cover: shoomverns,
+    orientation: "vertical",
   },
   {
     title: "Nice Rack",
     category: "personal",
     path: "/projects/nice-rack",
     cover: nice_rack,
+    orientation: "none",
   },
   {
     category: "design",
     cover: roachradiomotto,
+    orientation: "horizontal",
   },
   {
     category: "design",
     cover: roachradiomotto2,
+    orientation: "horizontal",
   },
   {
     title: "Mogi",
     category: "personal",
     path: "/projects/mogi",
     cover: mogi,
+    orientation: "horizontal",
   },
   {
     title: "Keywords Clustering Tool",
     category: "work",
     path: "/projects/keywords-clustering-tool",
     cover: keywords_clustering_tool,
+    orientation: "horizontal",
   },
 ];
 
@@ -101,10 +129,12 @@ const ProjectsPage = () => {
         </div>
         <div class="project-gallery">
           {PROJECTS.filter((project) =>
-            filter !== "all" ? project["category"] === filter : project
+            filter !== "all"
+              ? project["category"] === filter
+              : project["category"] !== "design"
           ).map((project, index) => {
             return (
-              <div class="image-container">
+              <div class={"image-container " + project["orientation"]}>
                 {project["category"] !== "design" ? (
                   <Link to={project["path"]}>
                     <img

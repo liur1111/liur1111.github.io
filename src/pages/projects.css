@@ -50,30 +50,45 @@
 }
 
 .project-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  grid-gap: 0.75em;
+  display: grid;
+  grid-auto-rows: 23vw;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 10%;
+}
+
+.project-gallery > .horizontal {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.project-gallery > .vertical {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .image-container {
   position: relative;
-  width: 30%;
-  aspect-ratio: 1;
-  justify-content: center;
-  margin: 1.25vw;
+  background-color: black;
+  border-radius: 5%;
 }
 
 .project-image {
-  width: 100%;
+  position: relative;
+  overflow: hidden;
   height: 100%;
-  object-fit: contain;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 3px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
 }
 
 .image-container:hover .project-image {
   cursor: pointer;
   opacity: 0.5;
-  transform: scale(1.05);
 }
 
 .img_description {

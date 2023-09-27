@@ -8,7 +8,28 @@ const EXPERIENCES = [
   {
     role: "Research Engineer",
     organization: "Oracle Labs",
-    description: "Graal Cloud Native (GCN) and Micronaut Full-stack developer",
+    description: (
+      <>
+        <span
+          class="external-links"
+          onClick={() => {
+            window.open("https://www.graal.cloud/gcn/");
+          }}
+        >
+          Graal Cloud Native (GCN)
+        </span>{" "}
+        and{" "}
+        <span
+          class="external-links"
+          onClick={() => {
+            window.open("https://micronaut.io/");
+          }}
+        >
+          Micronaut
+        </span>{" "}
+        Full-stack developer
+      </>
+    ),
     startDate: "jun 2023",
     endDate: "present",
     link: "https://labs.oracle.com/",
@@ -29,7 +50,7 @@ const EXPERIENCES = [
   {
     project: "Music Now",
     description: "Designed and built a music-sharing BeReal platform ",
-    startDate: "sep 2023",
+    startDate: "apr 2023 - may 2023",
     link: "music-now",
   },
   {
@@ -60,7 +81,7 @@ const EXPERIENCES = [
   {
     project: "Mogi",
     description: "Designed and built a social web app for sharing media",
-    startDate: "sep 2023",
+    startDate: "jan 2022",
     link: "mogi",
   },
   {
@@ -74,7 +95,19 @@ const EXPERIENCES = [
   {
     role: "NLP Software Engineering",
     organization: "LYVE soft",
-    description: "Created keywords extraction and clustering API",
+    description: (
+      <>
+        Created{" "}
+        <span
+          class="external-links"
+          onClick={() => {
+            window.open("https://keywordclustering.zenbrief.com//");
+          }}
+        >
+          keywords clustering app
+        </span>
+      </>
+    ),
     startDate: "jun 2021",
     endDate: "aug 2021",
     link: "https://lyvesoft.com/",

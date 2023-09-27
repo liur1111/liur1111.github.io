@@ -97,11 +97,11 @@
 }
 
 .project-header {
-  color: #bac5ff;
+  color: #9ad7ff;
 }
 
 .project-header:hover {
   cursor: pointer;
-  background-color: #bac5ff7f;
+  background-color: #9ad7ff7f;
   border-radius: 0.2vw;
 }

@@ -34,3 +34,14 @@
   color: #ffcc70;
   transform: scale(1.1);
 }
+
+.external-links {
+  color: #f2c5fa;
+  font-weight: 500;
+}
+
+.external-links:hover {
+  cursor: pointer;
+  background: #f4b7ff7f !important;
+  border-radius: 0.2vw;
+}

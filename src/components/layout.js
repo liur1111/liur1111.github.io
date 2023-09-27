@@ -5,18 +5,14 @@ import "./layout.css";
 
 const Layout = ({ children }) => {
   return (
-    // <ProjectContext.Consumer>
-    //   {(user) => (
-    //     <div id="layout" class="layout-container">
-    //       <NavBar />
-    //       {children}
-    //     </div>
-    //   )}
-    // </ProjectContext.Consumer>
-    <div class="layout-container">
-      <NavBar />
-      {children}
-    </div>
+    <ProjectContext.Consumer>
+      {(user) => (
+        <div id="layout" class="layout-container">
+          <NavBar />
+          {children}
+        </div>
+      )}
+    </ProjectContext.Consumer>
   );
 };
 
