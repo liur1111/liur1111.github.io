@@ -44,47 +44,10 @@ const PROJECTS = [
     orientation: "horizontal",
   },
   {
-    category: "design",
-    cover: letscelebrateballs,
-    orientation: "vertical",
-  },
-  {
-    category: "design",
-    cover: begoosedocrime,
-    orientation: "vertical",
-  },
-  {
-    category: "design",
-    cover: sesfverns,
-    orientation: "vertical",
-  },
-  {
     title: "Music Now",
     category: "personal",
     path: "/projects/music-now",
     cover: music_now,
-    orientation: "horizontal",
-  },
-  {
-    category: "design",
-    cover: shoomverns,
-    orientation: "vertical",
-  },
-  {
-    title: "Nice Rack",
-    category: "personal",
-    path: "/projects/nice-rack",
-    cover: nice_rack,
-    orientation: "none",
-  },
-  {
-    category: "design",
-    cover: roachradiomotto,
-    orientation: "horizontal",
-  },
-  {
-    category: "design",
-    cover: roachradiomotto2,
     orientation: "horizontal",
   },
   {
@@ -99,6 +62,43 @@ const PROJECTS = [
     category: "work",
     path: "/projects/keywords-clustering-tool",
     cover: keywords_clustering_tool,
+    orientation: "horizontal",
+  },
+  {
+    title: "Nice Rack",
+    category: "personal",
+    path: "/projects/nice-rack",
+    cover: nice_rack,
+    orientation: "none",
+  },
+  {
+    category: "design",
+    cover: letscelebrateballs,
+    orientation: "none",
+  },
+  {
+    category: "design",
+    cover: begoosedocrime,
+    orientation: "none",
+  },
+  {
+    category: "design",
+    cover: shoomverns,
+    orientation: "vertical",
+  },
+  {
+    category: "design",
+    cover: roachradiomotto,
+    orientation: "horizontal",
+  },
+  {
+    category: "design",
+    cover: sesfverns,
+    orientation: "none",
+  },
+  {
+    category: "design",
+    cover: roachradiomotto2,
     orientation: "horizontal",
   },
 ];
