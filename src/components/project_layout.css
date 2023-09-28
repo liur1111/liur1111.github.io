@@ -1,0 +1,141 @@
+.project-layout {
+  display: block;
+  padding-top: 3vh;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 5vh;
+}
+
+h2 {
+  font-size: 6.5vw !important;
+  font-weight: 800 !important;
+  line-height: 7vw !important;
+}
+
+.project-description {
+  font-size: 1.5vw !important;
+  font-weight: 300 !important;
+  line-height: 2vw !important;
+  width: 40vw !important;
+  height: 40vh !important;
+  margin: 1vh 0.5vw !important;
+  align-items: center;
+  display: flex;
+}
+
+.keywords {
+  display: block !important;
+}
+
+.back-arrow {
+  margin-top: 4vh;
+  font-size: 4vw;
+  align-self: center;
+  color: white;
+}
+
+.back-arrow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.title-right {
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+}
+
+.new-stack {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  gap: 5vw;
+}
+
+.project-media {
+  position: relative !important;
+  width: 40vw;
+  height: 40vh;
+  margin: 1vh 0.5vw;
+  border-radius: 5% !important;
+  object-fit: cover !important;
+}
+
+.screenshot {
+  width: 35vw !important;
+}
+
+.project-media:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+.figma:hover {
+  opacity: 1 !important;
+}
+
+.figma:fullscreen {
+  border-radius: 0 !important;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fullscreen-image img {
+  object-fit: contain !important;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0;
+}
+
+.vertical-fullscreen img {
+  height: 90vh !important;
+}
+
+.horizontal-fullscreen img {
+  height: 90vh !important;
+  width: 90vw !important;
+}
+
+.text-right {
+  text-align: flex-end;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+.external-links {
+  color: #ffcc70;
+}
+
+.external-links:hover {
+  cursor: pointer;
+  background: #ffcc707f !important;
+  border-radius: 0.2vw;
+}
+
+.nice-rack {
+  height: 65vh;
+}

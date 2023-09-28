@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 3vh;
+}
+
+.home-left {
+  flex-basis: 50%;
+}
+
+.home-right {
+  width: 65vh;
+}
+
+.contact-stack {
+  display: flex;
+  padding-top: 1rem;
+  gap: 3vw;
+}
+
+.contact-icon {
+  margin-top: 4vh;
+  font-size: 3.5vw;
+}
+
+.contact-icon:hover {
+  color: #ff8800;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0 !important;
+  }
+}
+
+img {
+  width: 65vh;
+  border-radius: 5%;
+  align-self: flex-end;
+}
+
+.copy-to-clipboard {
+  position: absolute;
+  left: 12%;
+  bottom: -5%;
+  background: linear-gradient(43deg, #b820ae 0%, #ff8800 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+  border: none !important;
+
+  visibility: hidden;
+  padding: 0.5vw;
+  font-size: 1vw;
+  border-radius: 0.2vw;
+}
+
+.mail:hover .copy-to-clipboard {
+  visibility: visible;
+}
+
+.copied {
+  position: absolute;
+  left: 14.5%;
+  bottom: -5%;
+  background: linear-gradient(43deg, #b820ae 0%, #ff8800 100%) !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+  border: none !important;
+  color: white;
+  padding: 0.5vw;
+  font-size: 1vw;
+  border-radius: 0.2vw;
+}
