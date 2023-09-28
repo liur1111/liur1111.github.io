@@ -27,6 +27,10 @@ h2 {
   display: flex;
 }
 
+.keywords {
+  display: block !important;
+}
+
 .back-arrow {
   margin-top: 4vh;
   font-size: 4vw;

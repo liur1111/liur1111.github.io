@@ -8,8 +8,7 @@ import music_now from "../images/projects/music-now/cover-photo.png";
 import music_now_video from "../images/projects/music-now/demo.mp4";
 import mogi from "../images/projects/mogi/cover-photo.png";
 import keywords_clustering_tool from "../images/projects/keywords-clustering-tool/cover-photo.png";
-import nice_rack2 from "../images/projects/nice-rack/cover-photo.png";
-import nice_rack from "../images/projects/nice-rack/system.png";
+import nice_rack from "../images/projects/nice-rack/cover-photo.png";
 import nice_rack1 from "../images/projects/nice-rack/circuit.png";
 import roachradiomotto from "../images/projects/RoachRadioMotto.png";
 import roachradiomotto2 from "../images/projects/RoachRadioMotto2.png";
@@ -72,7 +71,6 @@ const PROJECTS = [
     path: "/projects/nice-rack",
     cover: { src: nice_rack, orientation: "horizontal" },
     photo1: { src: nice_rack1, orientation: "horizontal" },
-    photo2: { src: nice_rack2, orientation: "none" },
   },
   {
     _id: 7,

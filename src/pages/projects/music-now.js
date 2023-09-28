@@ -16,12 +16,22 @@ const MusicNow = () => {
           onClick={() => setShowFullScreen("cover")}
         />
         <div class="project-description">
-          MusicNow is a web app that gives users a prompt every day, similarly
-          to BeReal. Users have to select 3 songs that match the prompt. The
-          results are shared with friends, and users can interact with the
-          results by liking prompts, saving songs, and commenting on others'
-          results. This was designed on Figma and built using Vue.JS, a MongoDB
-          database, and an API written in Typescript.
+          <div>
+            <span
+              class="external-links"
+              onClick={() =>
+                window.open("https://github.com/liur1111/music-now")
+              }
+            >
+              MusicNow
+            </span>{" "}
+            is a web app that gives users a prompt every day, similarly to
+            BeReal. Users have to select 3 songs that match the prompt. The
+            results are shared with friends, and users can interact with the
+            results by liking prompts, saving songs, and commenting on others'
+            results. This was designed on Figma and built using Vue.JS, a
+            MongoDB database, and an API written in Typescript.
+          </div>
         </div>
       </div>
       <div class="new-stack">

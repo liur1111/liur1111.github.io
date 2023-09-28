@@ -1,77 +1,58 @@
 import * as React from "react";
 import ProjectLayout from "../../components/project_layout.js";
+import PROJECTS from "../../components/project_list.js";
 import "../../components/project_layout.css";
-import coverPhoto from "../../images/projects/keywords-clustering-tool/cover-photo.png";
 
 const KeywordsClusteringTool = () => {
   const [showFullScreen, setShowFullScreen] = React.useState("");
+  const project = PROJECTS[5];
   return (
     <ProjectLayout projectTitle="Keywords Clustering Tool">
       <div class="new-stack">
-        <img
-          src={coverPhoto}
-          alt=""
-          class="project-media"
-          onClick={() => setShowFullScreen(coverPhoto)}
-        />
-        <div class="project-description">
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
+        <div class="project-description keywords">
+          <div>
+            I created Zenbrief's{" "}
+            <span
+              class="external-links"
+              onClick={() =>
+                window.open("https://keywordclustering.zenbrief.com/")
+              }
+            >
+              keyword clustering tool
+            </span>{" "}
+            during my internship at LYVE soft. This tool take in an input list
+            of keywords, by either copy-pasting it in the text field or
+            uploading a text file. In each case, there should be one keyword per
+            line. An optional topic can also be indicated. The topic will be
+            used to organize clusters from most closely related to least closely
+            related cluster.
+            <br></br>
+            <br></br>I wrote the entire backend of this tool. It uses an
+            NTP-based combined approach of vector quantization and Google’s
+            BERT, a neural-based technique for Natural Language Processing that
+            is able to understand context and therefore group keywords that have
+            similar meanings. I then implement an optimization technique to find
+            the optimal number of clusters in order to maximize the quality of
+            each cluster.
+          </div>
         </div>
-      </div>
-      <div class="new-stack">
-        <div class="project-description text-right">
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-        </div>
         <img
-          src={coverPhoto}
+          src={project["cover"]["src"]}
           alt=""
-          class="project-media"
-          onClick={() => setShowFullScreen(coverPhoto)}
+          class="project-media screenshot"
+          onClick={() => setShowFullScreen("cover")}
         />
       </div>
-      <div class="new-stack">
-        <img
-          src={coverPhoto}
-          alt=""
-          class="project-media"
-          onClick={() => setShowFullScreen(coverPhoto)}
-        />
-        <div class="project-description">
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-          description description descriptiondescrip description description
-        </div>
-      </div>
-      {/* <div class="new-stack">
-    <div class="project-description text-right">
-      description description descriptiondescrip description description
-      description description descriptiondescrip description description
-      description description descriptiondescrip description description
-      description description descriptiondescrip description description
-      description description descriptiondescrip description description
-      description description descriptiondescrip description description
-    </div>
-    <video muted controls class="project-media">
-      <source src={video1} type="video/mp4" />
-    </video>
-  </div> */}
       {showFullScreen !== "" && (
         <div class="fullscreen-overlay" onClick={() => setShowFullScreen("")}>
-          <div class="fullscreen-image">
-            <img src={showFullScreen} alt="" />
+          <div
+            class={
+              "fullscreen-image " +
+              project[showFullScreen]["orientation"] +
+              "-fullscreen"
+            }
+          >
+            <img src={project[showFullScreen]["src"]} alt="" />
           </div>
         </div>
       )}

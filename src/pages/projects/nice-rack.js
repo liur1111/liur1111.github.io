@@ -29,11 +29,18 @@ const NiceRack = () => {
             is a mostly-synchronous live music player that allows users to queue
             YouTube links to be played through all speakers connected to the
             system. This system allows users to either paste a link, or queue a
-            previously played song through a website. This queued song will be
-            processed and downloaded onto the server (previously via MIT), and
-            the corresponding audio will be sent to all ESP32’s through a
-            continuous socket connection. From here, the audio will be amplified
-            and sent to all external speakers. A demo video can be found{" "}
+            previously played song through a website.
+          </div>
+        </div>
+      </div>
+      <div class="new-stack">
+        <div class="project-description">
+          <div>
+            This queued song will be processed and downloaded onto the server
+            (previously via MIT), and the corresponding audio will be sent to
+            all ESP32’s through a continuous socket connection. From here, the
+            audio will be amplified and sent to all external speakers. A demo
+            video can be found{" "}
             <span
               class="external-links"
               onClick={() => window.open("https://youtu.be/h8n-In6jlcQ")}
@@ -43,14 +50,6 @@ const NiceRack = () => {
             .
           </div>
         </div>
-      </div>
-      <div class="new-stack">
-        <img
-          src={project["photo2"]["src"]}
-          alt=""
-          class="project-media screenshot"
-          onClick={() => setShowFullScreen("photo2")}
-        />
         <img
           src={project["photo1"]["src"]}
           alt=""
