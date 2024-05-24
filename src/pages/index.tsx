@@ -17,8 +17,10 @@ const IndexPage = () => {
         </nav>
       </header>
       <main>
-        <div className="main welcome">
-          WELCOME TO THE ROACH MIND WELCOME TO THE ROACH MIND
+        <div className="welcome">
+          WELCOME TO THE ROACH MIND WELCOME TO THE ROACH MIND WELCOME TO THE
+          ROACH MIND WELCOME TO THE ROACH MIND WELCOME TO THE ROACH MIND WELCOME
+          TO THE ROACH MIND WELCOME TO THE ROACH MIND WELCOME TO THE ROACH MIND
         </div>
         <div className="works">works</div>
         <div className="other">other</div>
