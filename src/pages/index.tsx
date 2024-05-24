@@ -22,7 +22,7 @@ const IndexPage = () => {
           ROACH MIND WELCOME TO THE ROACH MIND WELCOME TO THE ROACH MIND WELCOME
           TO THE ROACH MIND WELCOME TO THE ROACH MIND WELCOME TO THE ROACH MIND
         </div>
-        <div className="works">works</div>
+        <div className="main works">works</div>
         <div className="other">other</div>
       </main>
       <footer className="main footer">footer</footer>
